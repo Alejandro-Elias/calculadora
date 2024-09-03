@@ -22,8 +22,8 @@ export const Boton = ({ children, manejarClick, rangeValue }) => {
     }
 
 	return (
-		<button className='flex-col flex-1'>
-			<div className={`flex h-[60px] justify-center items-center rounded-lg font-bold ${colorBotom()} `}  onClick={() => manejarClick(children)} > 
+		<button className='w-full'>
+			<div className={`flex h-[60px] justify-center items-center rounded-lg font-bold w-full ${colorBotom()} `}  onClick={() => manejarClick(children)} > 
 				{children}
 			</div>
 			<div className={`h-1 w-[98%] rounded-b-xl -mt-[4px] mx-auto ${borderButton()}`} >				
