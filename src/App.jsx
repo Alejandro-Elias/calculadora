@@ -22,7 +22,10 @@ function App() {
       alert('Debe ingresar una ecuación válida');
     } else {
       try {
-        setInput(evaluate(input).toString());
+        if (input.length > 11) {
+          return setInput('Error')          
+        }
+        setInput(evaluate(input).toFixed(2).toString());
       } catch (error) {
         alert('Error en la ecuación');
       }
