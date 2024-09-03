@@ -60,8 +60,8 @@ function App() {
         </div>
       </div>
 
-      <div className={`h-[90px] rounded-xl mt-8 mx-auto max-w-[550px] ${rangeValue === 2 ? 'bg-theme2-background-screen' : rangeValue === 3 ? 'bg-theme3-background-screen' : 'bg-theme1-background-screen'}`}>
-        <p className='text-[40px] flex justify-end items-center h-full mr-6 ml-9 font-bold w-[268px] overflow-hidden md:w-[490px]'>{input}</p>
+      <div className={`h-[90px] rounded-xl mt-8 mx-auto w-full max-w-[550px] ${rangeValue === 2 ? 'bg-theme2-background-screen' : rangeValue === 3 ? 'bg-theme3-background-screen' : 'bg-theme1-background-screen'}`}>
+        <p className='text-[40px] flex text-right justify-end items-center box-border h-full pr-[18%] md:pr-[0] ml-9 font-bold overflow-hidden w-full max-w-[490px]'>{input}</p>
       </div>
 
       <div className={`p-6 md:p-8 my-6 rounded-xl h-full max-w-[550px] mx-auto ${rangeValue === 2 ? 'bg-theme2-background-toggle' : rangeValue === 3 ? 'bg-theme3-background-toggle' : 'bg-theme1-background-toggle'}`}>
